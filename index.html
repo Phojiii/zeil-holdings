@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zeil Holding</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" type="image/x-icon" href="/assets/img/favicon.ico">
+  <script src="https://kit.fontawesome.com/1ce38df49a.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id='loader'>Loading...</div>
+
+<!-- Navbar -->
+<!--  -->
+<nav class="navbar fixed-top bg-light shadow-sm">
+  <div class="container nav-inner">
+    <button class="menu-toggle" onclick="toggleMenuLeft()"><i class="fa fa-bars"></i> MENU</button>
+    <img src="/assets/img/Zeil-Logo.png" alt="Aratica Holding" class="aratica-logo">
+    <button class="menu-toggle" onclick="toggleMenuRight()">PRODUCT <i class="fa fa-bars"></i></button>
+  </div>
+
+  <!-- Left Slide Menu -->
+  <div class="menu-overlay left" id="menuOverlayLeft">
+    <button class="close-btn" onclick="toggleMenuLeft()">✕</button>
+    <img src="/assets/img/Zeil-Logo.png" alt="Aratica Holding" class="aratica-logo-nav">
+    <div class="menu-center">
+      <ul>
+        <li><a href="#section1">Home</a></li>
+        <li><a href="#section2">Our Divisions</a></li>
+        <li><a href="#section3">How We Work</a></li>
+        <li><a href="#section4">About</a></li>
+        <li><a href="#section5">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Right Slide Menu -->
+  <div class="menu-overlay right" id="menuOverlayRight">
+    <button class="close-btn" onclick="toggleMenuRight()">✕</button>
+    <img src="/assets/img/Zeil-Logo.png" alt="Aratica Holding" class="aratica-logo-nav">
+    <div class="menu-center">
+      <ul>
+        <li><a href="#section2">Crypto</a></li>
+        <li><a href="#section3">Banking</a></li>
+        <li><a href="#section4">Foundation</a></li>
+        <li><a href="#section5">Portfolio</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<!-- Sections -->
+<div class="scroll-section" id="section1">
+  <div class="container py-5">
+    <div class="header-content">
+      <h1 class="reveal">ZEIL Holdings: Driving excellence and sustainable growth across industries.</h1>
+      <a class="getintouch reveal" href="#section5">Get in Touch</a>
+    </div>
+    <video autoplay muted loop class="video-js vjs-default-skin header-video">
+        <source src="/assets/img/header.mp4" type="video/mp4"/>
+    </video>
+  </div>
+</div>
+
+<div class="scroll-section bg-light how-we-work" id="section2">
+  <div class="container py-5">
+    <h2 class="reveal">Our <span class="heading-span">Divisions</span></h2>
+    <p class="reveal">Each of our specialized subsidiaries is dedicated to excellence. Click below to explore more:</p>
+    <div class="work-cards reveal">
+      <div class="work-card">
+        <img src="assets/img/realestate.png" alt="Vision-Driven Growth">
+        <h3>Zeil Real Estate</h3>
+        <p>Innovative spaces for modern living</p>
+        <a href="#section5">Visit Site</a>
+      </div>
+      <div class="work-card">
+        <img src="assets/img/finance.png" alt="Trust & Transparency">
+        <h3>Zeil Finance</h3>
+        <p>Empowering financial success daily</p>
+        <a href="#section5">Visit Site</a>
+      </div>
+      <div class="work-card">
+        <img src="assets/img/academy.png" alt="Agile Execution">
+        <h3>Zeil Academy</h3>
+        <p>Cultivating talent through innovation</p>
+        <a href="#section5">Visit Site</a>
+      </div>
+      <div class="work-card">
+        <img src="assets/img/tech.png" alt="Impact-Led Innovation">
+        <h3>Zeil Tech</h3>
+        <p>Driving tech-forward solutions</p>
+        <a href="#section5">Visit Site</a>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="scroll-section our-companies" id="section3">
+  <div class="container py-5">
+    <h2 class="reveal">How We <span class="heading-span">Work</span></h2>
+    <p class="reveal">At ZEIL Holdings, we combine deep industry knowledge with a people-first approach.</p>
+
+    <div class="companies-grid reveal">
+      <div class="company-card">
+        <img src="assets/img/tranparentprocesses.png" alt="Impact-Led Innovation">
+        <h3>Transparent Processes</h3>
+        <p>Every venture is built on integrity and clear communication.</p>
+      </div>
+      <div class="company-card">
+        <img src="assets/img/clientcentric.png" alt="Impact-Led Innovation">
+        <h3>Client-Centric Vision</h3>
+        <p>Your goals define our path – we scale with your success.</p>
+      </div>
+      <div class="company-card">
+        <img src="assets/img/solutions.png" alt="Impact-Led Innovation">
+        <h3>Innovative Solutions</h3>
+        <p>We embrace modern tools and methods to future-proof your investments.</p>
+      </div>
+      <div class="company-card">
+        <img src="assets/img/sustainability.png" alt="Impact-Led Innovation">
+        <h3>Sustainable Growth</h3>
+        <p>Long-term strategies that deliver real value.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="scroll-section about-us" id="section4">
+  <div class="container py-5">
+    <h2 class="reveal">About <span class="heading-span">Zeil</span> Holdings</h2>
+    <p class="reveal">ZEIL Holdings is a UAE-based parent company driving impactful change through its four focused subsidiaries: Zeil Real Estate, Zeil Finance, Zeil Academy, and Zeil Tech. We aim to bridge opportunity with reliability – delivering excellence in every sector we enter. Our commitment is to empower clients and communities with knowledge, capital, digital power, and property excellence.</p>
+  </div>
+</div>
+<div class="scroll-section contact-us-section" id="section5">
+  <div class="container py-5">
+    <h2 class="reveal text-center">Contact <span class="heading-span">Us</span></h2>
+    <p class="reveal text-center mb-4">For inquiries or additional information, please contact our dedicated team.</p>
+
+    <div class="contact-content">
+      <div class="contact-info">
+        <p class="reveal">📞 <strong>Phone:</strong> +971 54 554 8060</p>
+        <p class="reveal">📧 <strong>Email:</strong> <a href="mailto:f.kiaewe@aratica.online">f.kiaewe@zeil.holdings</a></p>
+      </div>
+
+      <form class="contact-form reveal" action="#" method="POST">
+        <input type="text" name="full_name" placeholder="Full Name" required>
+        <input type="email" name="email" placeholder="Email Address" required>
+        <textarea name="message" rows="5" placeholder="Message" required></textarea>
+        <button type="submit" class="getintouch">Submit</button>
+      </form>
+    </div>
+  </div>
+</div>
+<div class="site-footer" id="footer">
+  <div class="container py-5">
+    <div class="footer-content reveal">
+      <!-- Left Column: Description -->
+      <div class="footer-about">
+        <img src="/assets/img/Zeil-Logo.png" alt="Aratica Logo Footer" class="aratica-logo mb-4">
+        <p><strong>ZEIL Holdings</strong> is a multi-sector company in the UAE, delivering trust and growth through real estate, finance, education, and tech. Together, we build impactful futures.</p>
+      </div>
+
+      <!-- Middle Column: Site Links -->
+      <div class="footer-links">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="#section1">Home</a></li>
+          <li><a href="#section2">Our Divisions</a></li>
+          <li><a href="#section3">How We Work</a></li>
+          <li><a href="#section4">About</a></li>
+          <li><a href="#section5">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Right Column: Social Media -->
+      <div class="footer-social">
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="https://www.facebook.com/profile.php?id=61576753161335" target="_blank"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="https://www.instagram.com/zeil.holdings/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+          <li><a href="https://x.com/zeil_holdings" target="_blank"><i class="fa fa-twitter"></i></a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2025 ZEIL Holdings. All rights reserved.</p>
+    </div>
+  </div>
+</div>
+
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/script.js"></script>
+<script>
+  function toggleMenuLeft() {
+    const overlay = document.getElementById("menuOverlayLeft");
+    overlay.classList.toggle("open");
+  }
+  function toggleMenuRight() {
+    const overlay = document.getElementById("menuOverlayRight");
+    overlay.classList.toggle("open");
+  }
+</script>
+<div class="bullets">
+  <div class="dot active"><span class="inner-dot"></span></div>
+  <div class="dot"><span class="inner-dot"></span></div>
+  <div class="dot"><span class="inner-dot"></span></div>
+  <div class="dot"><span class="inner-dot"></span></div>
+  <div class="dot"><span class="inner-dot"></span></div>
+</div>
+</body>
+</html>
