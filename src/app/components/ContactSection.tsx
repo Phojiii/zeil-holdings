@@ -1,19 +1,33 @@
 'use client';
 
 import React from 'react';
+import { useInViewSection } from '@/hooks/useInViewSection';
 
 const ContactSection: React.FC = () => {
+  const { ref, inView } = useInViewSection(0.4);
+
   return (
     <section
+      ref={ref}
       id="section5"
-      className="scroll-section relative bg-cover bg-center bg-no-repeat min-h-screen flex items-center py-16 px-4"
-      style={{ backgroundImage: `url('/contactus.png')` }}
+      className="scroll-section relative bg-cover bg-center bg-no-repeat min-h-screen flex items-center py-16 px-4 transition-all duration-1000 ease-in-out"
     >
-      <div className="absolute inset-0 bg-black/50 backdrop-blur-sm z-0"></div>
+      {/* Background with grayscale transition */}
+      <div
+        className={`absolute inset-0 bg-center bg-cover bg-no-repeat transition-all duration-1000 ease-in-out 
+        ${inView ? 'grayscale-0 opacity-90' : 'grayscale opacity-60'} -z-10`}
+        style={{ backgroundImage: `url('/contactus.png')` }}
+      />
+
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-black/50 backdrop-blur-sm z-0" />
 
       <div className="container mx-auto relative z-10">
         <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-100 mb-4">
-          Contact <span className="text-[#2C5374] drop-shadow text-shadow-gray-100 text-shadow-lg/30">Us</span>
+          Contact{' '}
+          <span className="text-[#2C5374] drop-shadow text-shadow-gray-100 text-shadow-lg/30">
+            Us
+          </span>
         </h2>
         <p className="text-center text-gray-100 mb-10 text-base md:text-lg max-w-2xl mx-auto">
           For inquiries or additional information, please contact our dedicated team.
@@ -43,21 +57,21 @@ const ContactSection: React.FC = () => {
               name="full_name"
               placeholder="Full Name"
               required
-              className="w-full p-3 border border-gray-200 text-white rounded-md"
+              className="w-full p-3 border border-gray-200 text-white bg-transparent rounded-md"
             />
             <input
               type="email"
               name="email"
               placeholder="Email Address"
               required
-              className="w-full p-3 border border-gray-200 text-white rounded-md"
+              className="w-full p-3 border border-gray-200 text-white bg-transparent rounded-md"
             />
             <textarea
               name="message"
               rows={5}
               placeholder="Message"
               required
-              className="w-full p-3 border border-gray-200 text-white rounded-md"
+              className="w-full p-3 border border-gray-200 text-white bg-transparent rounded-md"
             ></textarea>
             <button
               type="submit"

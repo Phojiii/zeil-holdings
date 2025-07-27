@@ -2,6 +2,7 @@
 
 import React from 'react';
 import Image from 'next/image';
+import { useInViewSection } from '@/hooks/useInViewSection';
 
 const divisions = [
   {
@@ -31,17 +32,30 @@ const divisions = [
 ];
 
 const DivisionsSection: React.FC = () => {
+  const { ref, inView } = useInViewSection(0.4);
+
   return (
     <section
+      ref={ref}
       id="section2"
-      className="scroll-section relative bg-cover bg-center bg-no-repeat min-h-screen flex items-center py-16 px-4"
-      style={{ backgroundImage: `url('/ourdivisions.png')` }}
+      className="scroll-section relative bg-cover bg-center bg-no-repeat min-h-screen flex items-center py-16 px-4 transition-all duration-1000 ease-in-out"
     >
-      <div className="absolute inset-0 bg-black/50 backdrop-blur-sm z-0"></div>
+      {/* Background layer */}
+      <div
+        className={`absolute inset-0 bg-center bg-cover bg-no-repeat transition-all duration-1000 ease-in-out 
+          ${inView ? 'grayscale-0 opacity-90' : 'grayscale opacity-60'} -z-10`}
+        style={{ backgroundImage: `url('/ourdivisions.png')` }}
+      />
+
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-black/50 backdrop-blur-sm z-0" />
 
       <div className="container mx-auto text-center relative z-10">
         <h2 className="text-3xl md:text-4xl font-bold text-gray-100 mb-4">
-          Our <span className="text-[#2C5374] drop-shadow text-shadow-gray-100 text-shadow-lg/30">Divisions</span>
+          Our{' '}
+          <span className="text-[#2C5374] drop-shadow text-shadow-gray-100 text-shadow-lg/30">
+            Divisions
+          </span>
         </h2>
         <p className="text-gray-100 mb-12 max-w-xl mx-auto text-base md:text-lg">
           Each of our specialized subsidiaries is dedicated to excellence. Click below to explore more:
