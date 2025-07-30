@@ -16,9 +16,9 @@ const AboutSection: React.FC = () => {
       <div
         className={`absolute inset-0 bg-center bg-cover bg-no-repeat transition-all duration-1000 ease-in-out 
           ${inView ? 'grayscale-0 opacity-90' : 'grayscale opacity-60'} -z-10`}
-        style={{ backgroundImage: `url('/aboutus.png')` }}
+        style={{ backgroundImage: `url('/bgthree.webp')` }}
       />
-      <div className="absolute inset-0 bg-black/50 backdrop-blur-sm -z-10" />
+      <div className="absolute inset-0 bg-black/20 backdrop-blur-sm -z-10" />
 
       <div className="container mx-auto text-center relative z-10 max-w-4xl">
         <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">

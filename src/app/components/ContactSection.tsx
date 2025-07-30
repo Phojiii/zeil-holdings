@@ -16,11 +16,11 @@ const ContactSection: React.FC = () => {
       <div
         className={`absolute inset-0 bg-center bg-cover bg-no-repeat transition-all duration-1000 ease-in-out 
         ${inView ? 'grayscale-0 opacity-90' : 'grayscale opacity-60'} -z-10`}
-        style={{ backgroundImage: `url('/contactus.png')` }}
+        style={{ backgroundImage: `url('/bgfour.webp')` }}
       />
 
       {/* Overlay */}
-      <div className="absolute inset-0 bg-black/50 backdrop-blur-sm z-0" />
+      <div className="absolute inset-0 bg-black/20 backdrop-blur-sm z-0" />
 
       <div className="container mx-auto relative z-10">
         <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-100 mb-4">
