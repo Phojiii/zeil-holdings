@@ -20,22 +20,22 @@ const ContactSection: React.FC = () => {
       />
 
       {/* Overlay */}
-      <div className="absolute inset-0 bg-black/20 backdrop-blur-sm z-0" />
+      <div className="absolute inset-0 bg-gray-200 backdrop-blur-sm z-0" />
 
       <div className="container mx-auto relative z-10">
-        <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-100 mb-4">
+        <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-4">
           Contact{' '}
-          <span className="text-[#2C5374] drop-shadow text-shadow-gray-100 text-shadow-lg/30">
+          <span className="text-[#2C5374] drop-shadow text-shadow-gray-700 text-shadow-lg/30">
             Us
           </span>
         </h2>
-        <p className="text-center text-gray-100 mb-10 text-base md:text-lg max-w-2xl mx-auto">
+        <p className="text-center text-gray-900 mb-10 text-base md:text-lg max-w-2xl mx-auto">
           For inquiries or additional information, please contact our dedicated team.
         </p>
 
-        <div className="flex flex-col md:flex-row gap-12">
+        <div className="flex flex-col md:flex-row gap-12 text-gray-900">
           {/* Contact Info */}
-          <div className="flex-1 text-gray-100 text-base space-y-4">
+          <div className="flex-1 text-gray-900 text-base space-y-4">
             <p>
               📞 <strong>Phone:</strong>{' '}
               <a href="tel:+971545548060" className="hover:underline">
@@ -57,21 +57,21 @@ const ContactSection: React.FC = () => {
               name="full_name"
               placeholder="Full Name"
               required
-              className="w-full p-3 border border-gray-200 text-white bg-transparent rounded-md"
+              className="w-full p-3 border border-gray-900 text-gray-900 bg-transparent rounded-md"
             />
             <input
               type="email"
               name="email"
               placeholder="Email Address"
               required
-              className="w-full p-3 border border-gray-200 text-white bg-transparent rounded-md"
+              className="w-full p-3 border border-gray-900 text-gray-900 bg-transparent rounded-md"
             />
             <textarea
               name="message"
               rows={5}
               placeholder="Message"
               required
-              className="w-full p-3 border border-gray-200 text-white bg-transparent rounded-md"
+              className="w-full p-3 border border-gray-900 text-gray-900 bg-transparent rounded-md"
             ></textarea>
             <button
               type="submit"

@@ -40,20 +40,19 @@ const HowWeWorkSection: React.FC = () => {
       <div
         className={`absolute inset-0 bg-center bg-cover bg-no-repeat transition-all duration-1000 ease-in-out 
         ${inView ? 'grayscale-0 opacity-90' : 'grayscale opacity-60'} -z-10`}
-        style={{ backgroundImage: `url('/bgtwo.webp')` }}
       />
 
       {/* Overlay */}
-      <div className="absolute inset-0 bg-black/20 backdrop-blur-sm z-0" />
+      <div className="absolute inset-0 bg-gray-200 backdrop-blur-sm z-0" />
 
       <div className="container mx-auto text-center relative z-10">
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-100 mb-4">
+        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
           How We{' '}
-          <span className="text-[#2C5374] drop-shadow text-shadow-gray-100 text-shadow-lg/30">
+          <span className="text-[#2C5374] drop-shadow text-shadow-gray-700 text-shadow-lg/30">
             Work
           </span>
         </h2>
-        <p className="text-gray-200 mb-12 max-w-xl mx-auto text-base md:text-lg">
+        <p className="text-gray-900 mb-12 max-w-xl mx-auto text-base md:text-lg">
           At ZEIL Holdings, we combine deep industry knowledge with a people-first approach.
         </p>
 

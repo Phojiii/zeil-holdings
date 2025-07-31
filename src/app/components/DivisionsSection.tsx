@@ -44,16 +44,15 @@ const DivisionsSection: React.FC = () => {
       <div
         className={`absolute inset-0 bg-center bg-cover bg-no-repeat transition-all duration-1000 ease-in-out 
           ${inView ? 'grayscale-0 opacity-90' : 'grayscale opacity-60'} -z-10`}
-        style={{ backgroundImage: `url('/bgone.webp')` }}
       />
 
       {/* Overlay */}
-      <div className="absolute inset-0 bg-black/20 backdrop-blur-sm z-0" />
+      <div className="absolute inset-0 bg-gray-100 backdrop-blur-sm z-0" />
 
       <div className="container mx-auto text-center relative z-10">
         <h2 className="text-3xl md:text-4xl font-bold text-gray-100 mb-4">
           Our{' '}
-          <span className="text-[#2C5374] drop-shadow text-shadow-gray-100 text-shadow-lg/30">
+          <span className="text-[#2C5374] drop-shadow text-shadow-black-700 text-shadow-lg/30">
             Divisions
           </span>
         </h2>

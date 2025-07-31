@@ -16,17 +16,16 @@ const AboutSection: React.FC = () => {
       <div
         className={`absolute inset-0 bg-center bg-cover bg-no-repeat transition-all duration-1000 ease-in-out 
           ${inView ? 'grayscale-0 opacity-90' : 'grayscale opacity-60'} -z-10`}
-        style={{ backgroundImage: `url('/bgthree.webp')` }}
       />
-      <div className="absolute inset-0 bg-black/20 backdrop-blur-sm -z-10" />
+      <div className="absolute inset-0 bg-gray-100 backdrop-blur-sm -z-10" />
 
       <div className="container mx-auto text-center relative z-10 max-w-4xl">
-        <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-          About <span className="text-[#2C5374]">Zeil</span> Holdings
+        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+          About <span className="text-[#2C5374] drop-shadow text-shadow-gray-700 text-shadow-lg/30">Zeil</span> Holdings
         </h2>
-        <p className="text-base md:text-lg text-gray-100 leading-relaxed">
+        <p className="text-base md:text-lg text-gray-900 leading-relaxed">
           ZEIL Holdings is a UAE-based parent company driving impactful change through its four focused subsidiaries:
-          Zeil Real Estate, Zeil Finance, Zeil Academy, and Zeil Tech. We aim to bridge opportunity with reliability –
+          Zeil Real Estate, Zeil Finance, Zeil Academy, and Zeil Tech. We aim to bridge opportunity with reliability -
           delivering excellence in every sector we enter. Our commitment is to empower clients and communities with
           knowledge, capital, digital power, and property excellence.
         </p>
