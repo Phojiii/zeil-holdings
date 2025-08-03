@@ -43,7 +43,7 @@ const HowWeWorkSection: React.FC = () => {
       />
 
       {/* Overlay */}
-      <div className="absolute inset-0 bg-gray-200 backdrop-blur-sm z-0" />
+      <div className="absolute inset-0 bg-gray-300 backdrop-blur-sm z-0" />
 
       <div className="container mx-auto text-center relative z-10">
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">

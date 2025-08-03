@@ -47,16 +47,16 @@ const DivisionsSection: React.FC = () => {
       />
 
       {/* Overlay */}
-      <div className="absolute inset-0 bg-gray-100 backdrop-blur-sm z-0" />
+      <div className="absolute inset-0 bg-gray-200 backdrop-blur-sm z-0" />
 
       <div className="container mx-auto text-center relative z-10">
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-100 mb-4">
+        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
           Our{' '}
           <span className="text-[#2C5374] drop-shadow text-shadow-black-700 text-shadow-lg/30">
             Divisions
           </span>
         </h2>
-        <p className="text-gray-100 mb-12 max-w-xl mx-auto text-base md:text-lg">
+        <p className="text-gray-900 mb-12 max-w-xl mx-auto text-base md:text-lg">
           Each of our specialized subsidiaries is dedicated to excellence. Click below to explore more:
         </p>
 
