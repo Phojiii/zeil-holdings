@@ -10,14 +10,14 @@ import ScrollHandler from './components/ScrollHandler';
 export default function Home() {
   return (
     <>
-      <Header />
+      {/* <Header />
       <HeroSection />
       <DivisionsSection />
       <HowWeWorkSection />
       <AboutSection />
       <ContactSection />
       <Footer />
-      <ScrollHandler />
+      <ScrollHandler /> */}
     </>
   );
 }
